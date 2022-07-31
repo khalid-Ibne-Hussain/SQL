@@ -7,7 +7,7 @@ create table employee(
 first_name varchar(20),
 last_name varchar(20),
 age int,
-positon varchar(30),
+position varchar(30),
 salary float
 );
 drop table employee;
@@ -25,9 +25,9 @@ insert into employee values('Nahid','Vai',35,'Software Engineer',32000.00);
 select * from employee;
 select * from employee where salary>30000;
 select first_name,last_name from employee where age<30;
-select first_name,last_name,salary from employee where positon = 'Programmer';
+select first_name,last_name,salary from employee where position = 'Programmer';
 -- or
-select first_name,last_name,salary from employee where positon like 'Programmer';
+select first_name,last_name,salary from employee where position like 'Programmer';
 select * from employee where last_name like '%qu%';
 select first_name from employee where first_name='Potsy';
 select * from employee where age > 40;
@@ -36,11 +36,11 @@ select * from employee where last_name like '%ith';
 SET SQL_SAFE_UPDATES = 0; /*-- we are practicing in local machine so set value is 0*/
 
 -- UPDATE
-update employee set positon = 'Data Scientist' where first_name = 'abul';
-update employee set age=45,salary=50000.00, positon = 'Neural Network' where first_name='Momen';
+update employee set position = 'Data Scientist' where first_name = 'abul';
+update employee set age=45,salary=50000.00, position = 'Neural Network' where first_name='Momen';
 
 -- DELETE
-delete from employee where positon='programmer II'; /*delete the row from the table*/
+delete from employee where position='programmer II'; /*delete the row from the table*/
 delete from employee; /*delete the table value only not the table*/
 select * from employee;
 -- DROP
