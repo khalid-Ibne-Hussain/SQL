@@ -7,7 +7,7 @@ create table employee(
 first_name varchar(20),
 last_name varchar(20),
 age int,
-positon varchar(30),
+position varchar(30),
 salary float
 );
 drop table employee;
@@ -25,9 +25,9 @@ insert into employee values('Nahid','Vai',35,'Software Engineer',32000.00);
 select * from employee;
 select * from employee where salary>30000;
 select first_name,last_name from employee where age<30;
-select first_name,last_name,salary from employee where positon = 'Programmer';
+select first_name,last_name,salary from employee where position = 'Programmer';
 -- or
-select first_name,last_name,salary from employee where positon like 'Programmer';
+select first_name,last_name,salary from employee where position like 'Programmer';
 select * from employee where last_name like '%qu%';
 select first_name from employee where first_name='Potsy';
 select * from employee where age > 40;
